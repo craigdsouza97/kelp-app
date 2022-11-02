@@ -1,0 +1,14 @@
+.repos {
+    overflow-y: scroll;
+}
+
+.home {
+    position: absolute;
+    display: flex;
+    top: 100px;
+    width: 100%;
+}
+
+.container {
+   margin: auto;
+}

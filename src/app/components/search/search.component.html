@@ -1,0 +1,15 @@
+<div class="basic-container">
+    <div class="search-box mat-elevation-z5">
+        <mat-form-field
+          class="form-field"
+          [floatLabel]="'never'">
+          <input matInput type="text" name = "username" placeholder="GitHub User Name" [(ngModel)]="username"
+          (keyup.enter)="OnSearch()"/>
+        </mat-form-field>
+        
+        <button mat-button mat-icon-button p-0 (click)="OnClear()"
+          matTooltip="Clear search">
+          <mat-icon>clear</mat-icon>
+        </button>
+        </div>
+</div>

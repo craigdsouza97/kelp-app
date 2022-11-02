@@ -1,0 +1,71 @@
+.mat-card-footer {
+  max-height: 25vh;
+  overflow-y: auto;
+  border-radius: 20px;
+}
+
+.mat-card-title {
+  font-size: calc(0.4em + 1vw);
+  align-self: center;
+  font-weight: bolder;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.repos {
+  padding: 0%;
+}
+
+.mat-card-content {
+  border-bottom: 1px #193152 solid;
+}
+.mat-card {
+  max-height: 98vh;
+  max-width: 90vw;
+}
+.userlogin {
+  text-align: center;
+  max-width: fit-content;
+}
+
+.image {
+  width: min(30vw, 10vh);
+  height: min(30vw, 10vh);
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: 2vw;
+  margin-top: 4vh;
+  z-index: 10;
+}
+
+.clip-circle {
+  clip-path: circle(min(15vw, 5vh) at center);
+}
+
+.user {
+  border: 1px solid;
+  border-radius: 20px;
+}
+
+.card-text {
+  word-wrap: break-word;
+  font-size: calc(0.4em + 1vw);
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+  overflow-y: scroll;
+  background: white;
+  box-shadow: inset 0 0 4px #707070;
+  border-bottom-right-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #193152;
+  border-bottom-right-radius: 20px;
+}

@@ -1,0 +1,18 @@
+<div class = "home">
+    <div class = "container">
+    
+    <div *ngIf="!isHistory || userResponse">
+        <app-search *ngIf = "!isHistory" (onSearch)="setGITUserResponse($event)" (onUserFound)="onUserFound($event)"></app-search>
+
+        <app-git-user-profile [user]="userResponse" *ngIf="userResponse !== undefined"></app-git-user-profile>
+
+        <div *ngIf = "!isUserFound">
+            <H1 style="text-align: center; margin-top: 50px;">No Such User</H1>
+        </div>
+
+    </div>
+
+    <app-history *ngIf="isHistory && !userResponse" (onHistoryClick)="setGITUserResponse($event)" (onProfileLinkClick)="setIsHistory($event)"></app-history>
+
+</div>
+</div>

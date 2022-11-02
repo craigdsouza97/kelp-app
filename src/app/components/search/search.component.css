@@ -1,0 +1,22 @@
+.search-box {
+    flex-direction: row;
+    padding: 1px;
+    border-radius: 10px;
+    background: #fff;
+    text-align: center;
+    border-color: blue;
+    border: 10px;
+  }
+
+  .form-field {
+    width: 70vw;
+    padding: 10px;
+    padding-left: 20px;
+  }
+
+  .basic-container {
+    padding: 15px;
+    display: flex;
+    align-content: center;
+}
+  

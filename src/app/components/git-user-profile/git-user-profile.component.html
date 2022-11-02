@@ -1,0 +1,34 @@
+<mat-card *ngIf="user" class="user">
+  <mat-card-header class="profile">
+    <img src="{{ user.avatar_url }}" class="image clip-circle" />
+    <mat-card-title class="userlogin">{{ user.login }}</mat-card-title>
+    <mat-card-subtitle *ngIf="user?.company">{{
+      user.company
+    }}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <p class="card-text" *ngIf="user?.bio">
+      {{ user.bio }}
+    </p>
+    <p class="card-text"><b>Name:</b> {{ user.name }}</p>
+    <p class="card-text">
+      <b>Github Followers:</b>
+      {{ user.followers }} <b>&nbsp;Github Following:</b> {{ user.following }}
+    </p>
+    <p class="card-text"><b>Created On: </b>{{ user.created_at | date }}</p>
+  </mat-card-content>
+  <mat-card-footer>
+    <mat-card *ngFor="let repo of user.repos" class="repos">
+      <mat-card-header class="repo-card">
+        <mat-card-title class="card-text"
+          ><a [href]="repo.html_url" target="_blank">
+            {{ repo.name }}
+          </a></mat-card-title
+        >
+        <mat-card-subtitle class="card-text">{{
+          repo.description ? repo.description : '&nbsp;'
+        }}</mat-card-subtitle>
+      </mat-card-header>
+    </mat-card>
+  </mat-card-footer>
+</mat-card>

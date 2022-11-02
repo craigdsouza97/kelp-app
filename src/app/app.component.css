@@ -1,0 +1,54 @@
+.toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #193152;
+  }
+
+  h4 {
+    color: white;
+    font-weight: 600;
+    margin-top: 10px;
+    font: 1.5em sans-serif;
+  }
+
+  .icon {
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    margin-left: 10;
+  }
+
+  .history {
+    position: absolute;
+    right: 0;
+    top:0;
+    padding: 15px;
+    margin-right: 15px;
+  }
+
+  .history-icon {
+    color: #eee;
+    transform: scale(1.5);
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #193152;
+    color: white;
+    font-weight: 600;
+    font-family: sans-serif;
+  }
